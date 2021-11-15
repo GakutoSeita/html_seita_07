@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+/*----------------------------------------
+COMMON
+----------------------------------------*/
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    color: #222222;
+    text-align: justify;
+    text-align: inter-deograph;
+}
+
+p {
+    margin: 30px 0 0;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.color-yellow {
+    color: #ffd61a;
+}
+
+.subtitle-h2 {
+    margin: 60px 0 30px;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.subtitle-h3 {
+    margin: 0 0 60px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #ffd61a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+/* 以下、ラーニングより備忘*/
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+
+/* input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
+
+
+/*----------------------------------------
+HEADER
+----------------------------------------*/
+
+/*--------------------
+HEADER-LOGO 
+--------------------*/
+
+.header {
+    display: flex;
+    justify-content: Space-between;
+}
+
+.logo {
+    margin: 20px 50px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #222222;
+}
+
+
+/*-----------------------
+NAV 
+-----------------------*/
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    padding: 50px 50px 50px 0px;
+    font-size: 21px;
+}
+
+
+/*----------------------------------------
+MAIN
+----------------------------------------*/
+
+
+/*-----------------------
+TOP_IMAGE 
+-----------------------*/
+
+.top_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: 0 0 60px;
+    background-image: url("../img/mainbg.png");
+    background-position: center;
+    filter: drop-shadow(7px 7px 7px #aaa);
+}
+
+.top_image h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.top_image h2 {
+    margin: 30px 0 0;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/*-----------------------
+ABOUT 
+-----------------------*/
+
+.about-text {
+    margin: 0 0 80px;
+}
+
+.about__image {
+    display: flex;
+    flex-direction : row-reverse;
+    filter: drop-shadow(7px 7px 7px #aaa);
+    margin: 0 0 60px;
+}
+
+.about__image img {
+    width: 300px;
+}
+
+
+/*-----------------------
+COURSE 
+-----------------------*/
+
+.course-text {
+    margin: 0 0 60px 0;
+}
+
+.course-inner {
+    display: flex;
+    margin: 0 auto;
+}
+
+.course-inner__image {
+    width: 600px;
+    filter: drop-shadow(7px 7px 7px #aaa);
+}
+
+.course-inner__image img {
+    width: 600px;
+}
+
+.course-inner__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600px;
+    text-align: left;
+}
+
+.course-inner__container--left {
+    justify-content: flex-end;
+}
+
+.course-inner__text {
+    width: 435px;
+    /* 480-50=430のはずだが、改行されてしまう… */
+    margin: 0 0 0 50px;
+}
+
+.course-inner__text--left {
+    margin: 0 50px 0 0;
+}
+
+.course-inner__text h3 {
+    font-weight: 800;
+    margin: 0 0 40px;
+    font-size: 18px;
+}
+
+.course-inner__text p {
+    margin: 0;
+    line-height: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+/*-----------------------
+NEWS 
+-----------------------*/
+
+.news-container {
+    width: 960px;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 60px auto;
+}
+
+.news-container>a {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+}
+
+.news-container>a:hover {
+    opacity: 0.5;
+}
+
+.news-inner {
+    width: 300px;
+    height: 250px;
+    margin: 0 30px 0 0;
+}
+
+.news-inner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: drop-shadow(7px 7px 7px #aaa);
+}
+
+.news-inner-date {
+    margin: 30px 0 24px 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.news-inner-text {
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.btn-more {
+    margin: 0 auto 120px;
+}
+
+
+/*-----------------------
+Access
+-----------------------*/
+
+.map {
+    margin: 0 0 60px;
+}
+
+.access-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 0 auto 30px;
+}
+
+.access-title {
+    width: 150px;
+    margin: 0 0 30px;
+    line-height: 20px;
+}
+
+.access-item {
+    width: 350px;
+    margin: 0 0 30px;
+}
+
+
+
+/*-----------------------
+CONTACT
+-----------------------*/
+
+.contact-text {
+    margin: 0 0 70px;
+}
+
+.form-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto 30px;
+}
+
+.form-top-border {
+    border-top: solid 2px #cacaca;
+}
+
+.form-title {
+    width: 158px;
+    padding: 10px 64px 0 16px;
+    /* paddingのTopは10pxで合ってる？ */
+    border-bottom: solid 1px #cacaca;
+    border-right: solid 2px #cacaca;
+    line-height: 20px;
+    /* このline-hightは何処の事？ */
+}
+
+.form-item {
+    width: 400px;
+    border-bottom: solid 1px #cacaca;
+}
+
+.form-parts {
+    width: 328px;
+    height: 36px;
+    border: solid 1px #bfbfbf;
+    margin: 8px 0 8px 8px;
+    font-size: 16px;
+}
+
+.form-detail {
+    resize: none;
+    width: 300px;
+    height: 200px;
+    padding: 10px 0 10px;
+    font-size: 16px;
+}
+
+.form-ul li {
+    margin: 8px 0 24px 8px;
+}
+
+
+/*-----------------------------------------------
+FOOTER
+-----------------------------------------------*/
+
+.footer {
+    height: 80px;
+    background: #707070;
+    margin: 140px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer small {
+    font-size: 14px;
+    color: white;
+}
+
+
+/* 松原さんに教えて貰った「ページトップへ戻る」 */
+.icon-up {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.btn-pagetop {
+    position: absolute;
+    top: -78px;
+    right: 0;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #707070;
+    text-align: center;
+    text-decoration: none;
+}
